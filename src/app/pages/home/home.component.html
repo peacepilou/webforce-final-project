@@ -1,0 +1,19 @@
+<div class="container">
+    <div id="hero">
+        <h1>Notre marque {{brand}}</h1>
+        <img [src]="logo" [alt]="logo">
+        <button class="btn" (click)="showContent()">{{toggleContent ? 'Masquer nos offres' : 'Découvrir nos offres'}}</button>
+    </div>
+    <div *ngIf="toggleContent" class="cards-container">
+        <div class="cards" *ngFor="let card of cards; let i = index" >
+                <img [src]="card.picture" [alt]="card.title">
+                <h2>{{card.title}}</h2>
+                <p>{{card.content}}</p>
+        </div>
+    </div>
+</div>
+<app-our-work></app-our-work>
+
+
+
+

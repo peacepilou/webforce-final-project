@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    .text-container {
+        display: flex;
+        flex-direction: column;
+            div {
+            padding: 20px;
+            max-width: 270px;
+            p {
+                text-align: justify;
+                padding: 10px;
+            }
+        }
+    }
+    img {
+        width: 450px;
+    }
+}
+.is-changed {
+    background-color: white;
+    text-align: center;
+}

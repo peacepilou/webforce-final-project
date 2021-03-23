@@ -1,0 +1,12 @@
+
+<div class="container">
+    <h2>Ceci est le titre de mon second composant</h2>
+    <div>
+        <label for="url-generator">Saisir l'url dynnamique :</label>
+        <input name="url-generator" type="text" [(ngModel)]="url">
+    </div>
+    <div>
+        <p>Au click, je navigue vers l'Url :</p>
+        <a [href]="url">{{url}}</a>
+    </div>
+</div>
